@@ -1,0 +1,198 @@
+/* Flexbox Part 1 */
+/*focusing on the flex-section1 class's unordered list*/
+#flex-section1 ul {
+    
+	display: flex;
+	/*Taking off the default list styling*/
+	list-style: none;
+	/*arranging objects in the center vertically */
+	align-items: center;
+	/*Maintain equal distance between each item*/
+	justify-content: space-evenly;
+	/*Eliminating the default padding*/
+	padding: 0;
+	/*Eliminating the default margin*/
+	margin: 0; 
+  }
+  
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+#flex-section2 ul {
+	/*applies the <ul> element's flexbox layout. */
+	display: flex;
+	/* eliminates the <ul> element's default margin*/
+	margin: 0;
+	/*Eliminates the <ul> element's default padding*/
+	padding: 0;
+
+}
+
+#flex-section2 li {
+	/*Eliminates the default list item marker*/ 
+	list-style: none;
+	/*permits the <li> elements to expand and contract inside a flexible container as needed.*/
+	flex: 1;
+}
+
+#flex-section2 .item1 {
+	order: 1;
+
+}
+
+#flex-section2 .item2 {
+	order: 3;
+}
+
+#flex-section2 .item3 {
+	order: 2;
+}
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+	/*flexbox layout is applied to the.box element.*/
+	display: flex;
+	/*aligns the objects inside the.box element vertically to the center.*/
+	align-items: center;
+	/*increases the padding on all sides of the box by 35%.*/
+	padding: 35%;
+}
+
+#flex-section3 .tags ul {
+	/* No numbers or bullets*/
+	list-style: none;
+	/*Make use of the Flexbox layout */
+	display: flex;
+	/*Permit objects to extend across multiple lines. */
+	flex-wrap: wrap;
+	/*arrange things in a row.*/
+	flex-direction: row;
+	/*Eliminates default margin*/
+	margin: 0;
+	/*Eliminates default padding*/
+	padding: 0;
+
+}
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+	/*Enables the grid layout by setting the display attribute to grid.*/
+	display: grid;
+	/*identifies a grid with four columns of equal width.*/
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/*creates a 20 px space between grid elements. */
+  	grid-gap: 20px;
+	/*Makes certain that every row has a 100px height.*/
+  	grid-auto-rows: 100px;
+}
+
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+  
+#grid-section2 .gridboxblue {
+	/*The element will span three rows, beginning at the first row. */
+	grid-row: 1 / span 3;
+	/* The element will span three columns, beginning at the second column. */
+	grid-column: 2 / span 3;
+	/*The element will span three columns, beginning at the second column. */
+	z-index: 2;
+    
+}
+
+#grid-section2 .gridboxred {
+    /*The element shall be positioned in the grid's second row. */
+	grid-row: 2;
+	/*The element will span two columns, beginning at the first column. */
+	grid-column: 1 / span 2;
+	/*determines the element's stacking order, placing lesser values behind higher values.*/
+	z-index: 1;
+	
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+#grid-section3 .grid {
+	/*In this case, CSS Grid Layout is used by the element.*/
+	display: grid;
+	/*Two columns are defined, the first of which occupies twice the space of the second.*/
+	grid-template-columns: 2fr 1fr;
+	/*specifies three rows of 100, 300, and 100 pixels as their set heights.*/
+	grid-template-rows: 100px 300px 100px;
+	/*creates a 10px space between each grid element.*/
+	grid-gap: 10px;
+}
+
+#grid-section3 .box1 {
+	/*As a result, the element begins in the first column and spans three columns.*/
+	grid-column: 1 / span 3;
+}
+
+#grid-section3 .box2 {
+	/*Inserts the element onto the grid's second row.*/
+	grid-row: 2;
+	/*causes the element to span two columns, beginning at the second column.*/
+	grid-column: 2 / span 2;
+}
+
+#grid-section3 .box3 {
+	/*Inserts the element onto the grid's second row.*/
+	grid-row: 2;
+	/*places the element in the grid's first column.*/
+	grid-column: 1;
+}
+
+#grid-section3 .box4 {
+	/*This sets the element in the third row of the grid.*/
+	grid-row: 3;
+	/*As a result, the element spans three columns, beginning at the first column.*/
+	grid-column: 1 / span 3;
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+	/*This causes the <a> elements to appear as inline-blocks, enabling block-level characteristics to be applied to them while they stay inline.*/ 
+	display: inline-block;
+	/*Sets the <a> elements' background color to a light gray (#ccc). */
+	background-color: #ccc;
+	/*Sets the <a> elements' text color to black (#000).*/
+	color: #000;
+	/*adds 20px of padding around the <a> element's content.*/
+	padding: 20px;
+	/*eliminates the <a> elements' default underlining*/
+	text-decoration: none;
+	transition: background-color 3s ease, color 3s ease;
+
+}
+
+#transition-section .box a:hover {
+	/*Hovering over the backdrop causes it to change to a red color.*/
+	background-color: #cc0000;
+	/*Hovering over the text causes it to change to white. */
+	color: #fff;
+	transition: background-color .5s ease, color .5s ease;
+
+
+}
+
+/* end Transition Part */
